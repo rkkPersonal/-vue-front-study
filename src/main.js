@@ -10,8 +10,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
 // for customeize component
-import ArticleComponent from './components/ArticleComponent.vue'
+import MyComponent from './components/MyComponent.vue'
 import Register from './components/Register.vue'
+import HomePage  from './components/HomePage.vue'
 
 // for  ajax request 
 import axios from 'axios'
@@ -21,9 +22,9 @@ axios.defaults.withCredentials = true;
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 
-Vue.component('my-component', ArticleComponent)
+Vue.component('my-component', MyComponent)
 Vue.component('register-component', Register)
-Vue.component('home-page', Register)
+Vue.component('home-page', HomePage)
 
 Vue.config.productionTip = false
 
