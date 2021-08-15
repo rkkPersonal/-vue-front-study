@@ -2,15 +2,24 @@
   <div class="container">
     <h1>
       重大新闻事件
-      <el-input v-model="input" placeholder="请输入内容"></el-input>
-
-      <el-button type="primary" @click="search()" icon="el-icon-search"
-        >搜索</el-button
-      >
     </h1>
+
     <ul>
       <li>{{ msg }}</li>
     </ul>
+    <span>
+      <el-input
+        v-model="input"
+        placeholder="请输入内容"
+        size="small"
+        style="width: 300px"
+      ></el-input>
+    </span>
+    <span>
+      <el-button type="primary" @click="search()" icon="el-icon-search"
+        >搜索</el-button
+      >
+    </span>
     <home-page v-if="show == true"></home-page>
   </div>
 </template>
