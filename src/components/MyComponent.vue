@@ -2,6 +2,8 @@
   <div class="container">
     <h1>
       重大新闻事件
+      <el-input v-model="input" placeholder="请输入内容"></el-input>
+
       <el-button type="primary" @click="search()" icon="el-icon-search"
         >搜索</el-button
       >
@@ -28,3 +30,6 @@ export default {
   }
 };
 </script>
+<style scoped>
+@import url("//unpkg.com/element-ui@2.15.5/lib/theme-chalk/index.css");
+</style>
